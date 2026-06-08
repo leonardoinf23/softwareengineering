@@ -1,0 +1,20 @@
+# Mengabaikan folder dependencies/library (ukurannya sangat besar dan bisa di-install sendiri)
+node_modules/
+vendor/
+
+# Mengabaikan file konfigurasi rahasia (WAJIB di-ignore agar password database lokalmu tidak tersebar)
+.env
+
+# Mengabaikan folder bawaan text editor atau IDE masing-masing laptop
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+
+# Mengabaikan file log atau laporan error
+*.log
+npm-debug.log*
+
+# Mengabaikan file OS sampah
+.DS_Store
+Thumbs.db
