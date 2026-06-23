@@ -8,13 +8,21 @@
 </head>
 <body class="bg-slate-900 text-slate-100 font-sans">
 
-    <nav class="bg-slate-950 p-4 border-b border-slate-800 shadow-md">
+   <nav class="bg-slate-950 p-4 border-b border-slate-800 shadow-md">
         <div class="max-w-6xl mx-auto flex justify-between items-center">
             <h1 class="text-xl font-bold tracking-wider text-emerald-400">🛠️ CONTROL PANEL ADMIN</h1>
-            <span class="text-xs bg-slate-800 px-3 py-1 rounded border border-slate-700">Role: Super Admin</span>
+            
+            <div class="flex gap-4 items-center">
+                <span class="text-xs bg-slate-800 px-3 py-1.5 rounded border border-slate-700 text-slate-300">
+                    👤 {{ session('nama_admin') }}
+                </span>
+                <a href="{{ route('admin.logout') }}" class="bg-red-500 hover:bg-red-600 text-white text-xs font-bold px-3 py-1.5 rounded transition shadow">
+                    Logout
+                </a>
+            </div>
         </div>
     </nav>
-
+    
     <main class="max-w-6xl mx-auto px-4 py-10">
         <h2 class="text-2xl font-bold mb-6 border-b border-slate-800 pb-2">Daftar Pengajuan Reservasi Lapangan</h2>
 
